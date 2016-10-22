@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, 'unbundled')));
 
 
 app.get('/*', function(req, res) {
-    res.sendfile(__dirname + 'index.html');
+    res.sendfile(__dirname + '/index.html');
 });
 
 app.listen(process.env.PORT || 5000);
