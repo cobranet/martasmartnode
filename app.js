@@ -6,7 +6,7 @@ app.use(express.static('unbundled'));
 app.use(express.static(path.join(__dirname, 'unbundled')));
 
 
-app.get('/', function(req, res) {
+app.get('/*', function(req, res) {
     res.render('index.html');
 });
 
